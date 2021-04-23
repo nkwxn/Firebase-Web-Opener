@@ -7,15 +7,28 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .mainButton {
   width: 100%;
   padding: 15px;
+  margin: 5px;
   background-color: blue;
   color: white;
   border-radius: 15pt;
   border-width: 0;
   font-size: large;
 }
+
+.secButton {
+  padding: 15px 25px;
+  margin: 5px;
+  background-color: cornflowerblue;
+  color: black;
+  border-radius: 15pt;
+  border-width: 0;
+  font-size: large;
+}
+
 .greetingAndTime {
   display: flex;
   flex-direction: column;
@@ -23,13 +36,15 @@ body {
   text-align: center;
   margin: 10px 0px;
 }
-#pagesButtonCollections {
+
+.pagesButtonCollections {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
+
 .buttons {
   padding: 15px;
   margin: 5px;

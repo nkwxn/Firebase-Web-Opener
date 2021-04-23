@@ -15,7 +15,6 @@ function createArrs() {
                 }
                 console.log(pagesArr)
                 createBtns()
-                // document.getElementById("mainButton").onclick = mainBtnClicked
             }
         }
     };
@@ -31,21 +30,26 @@ function mainBtnClicked() {
     window.close()
 }
 
+function mainBtnCategory(min, max) {
+    for (let index = min; index <= max; index++) {
+        const element = pagesArr[index];
+        var target = "_blank"
+        window.open(element, target);
+    }
+    window.close()
+}
+
 function createBtns() {
     let btnCode = "";
     for (let index = 0; index < pagesArr.length; index++) {
         const element = pagesArr[index];
         btnCode += `
-        <a href="${element}" class="buttons">
+        <a href="${element}" class="buttons" target="_blank">
             ${element}
         </a>
         `;
     }
     document.getElementById("pagesButtonCollections").innerHTML = btnCode;
-}
-
-function btnClicked(idx) {
-    window.open(pagesArr[idx], "_self");
 }
 
 // Function membaca waktu dan tanggal

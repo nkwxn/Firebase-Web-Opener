@@ -23,9 +23,23 @@
       Open All Pages
     </button>
     <h3 style="margin-bottom: 0; text-align: center">
+      Or open a specific category:
+    </h3>
+    <div class="pagesButtonCollections">
+      <button class="secButton" id="secButton" onclick="mainBtnCategory(0, 3)">
+        Indonesian News
+      </button>
+      <button class="secButton" id="secButton" onclick="mainBtnCategory(4, 12)">
+        English News
+      </button>
+      <button class="secButton" id="secButton" onclick="mainBtnCategory(7, 12)">
+        Tech News
+      </button>
+    </div>
+    <h3 style="margin-bottom: 0; text-align: center">
       Or open a specific page:
     </h3>
-    <div id="pagesButtonCollections"></div>
+    <div id="pagesButtonCollections" class="pagesButtonCollections"></div>
     <p id="textFromFile"></p>
   </body>
 </html>
